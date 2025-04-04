@@ -77,25 +77,25 @@
 
         layer_1 {
             bindings = <
-&kp JP_EQUAL  &kp JP_DQUOTE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9                                    &kp JP_LPAREN     &kp JP_RPAREN  &kp JP_LBRACE  &kp JP_RBRACE      &kp MINUS
-&kp JP_AT    &kp EXCLAMATION    &kp KP_N4        &kp KP_N5        &kp KP_N6        &trans    &trans            &kp LG(LEFT_ARROW)       &kp PAGE_DOWN          &kp PAGE_UP     &kp LG(RIGHT_ARROW)  &kp SEMICOLON
-&kp PLUS       &kp KP_N0          &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &trans    &kp JP_QUOTE  &kp JP_QUOTE         &kp QUESTION           &kp SLASH       &kp BACKSLASH        &kp JP_ASTERISK
-&kp BACKSLASH  &kp CARET          &kp HASH         &kp SLASH        &trans           &trans    &kp LG(UP_ARROW)  &kp LG(LS(RIGHT_ARROW))                                         &trans               &kp DOLLAR
+&kp JP_EQUAL  &kp JP_DQUOTE  &kp KP_N7  &kp N8  &kp N9                                    &kp JP_LPAREN     &kp JP_RPAREN  &kp JP_LBRACE  &kp JP_RBRACE      &kp MINUS
+&kp JP_AT    &kp EXCLAMATION    &kp N4        &kp N5        &kp N6        &trans    &trans            &kp LG(LEFT_ARROW)       &kp PAGE_DOWN          &kp PAGE_UP     &kp LG(RIGHT_ARROW)  &kp SEMICOLON
+&kp PLUS       &kp N0          &kp N1        &kp N2        &kp N3  &trans    &kp JP_QUOTE  &kp JP_QUOTE         &kp QUESTION           &kp SLASH       &kp BACKSLASH        &kp JP_ASTERISK
+&kp BACKSLASH  &kp CARET          &kp HASH         &kp SLASH        &trans           &trans    &kp LG(UP)  &kp LG(LS(RIGHT))                                         &trans               &kp DOLLAR
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp KP_NUMBER_7  &kp ENTER    &kp F5       &kp PLUS                                 &kp F2            &kp F10            &kp BACKSPACE   &kp DELETE       &kp JP_UNDERSCORE
+&kp ESCAPE  &kp LC(RIGHT)  &kp ENTER    &kp F5       &kp PLUS                                 &kp F2            &kp F10            &kp BACKSPACE   &kp DELETE       &kp JP_UNDERSCORE
 &kp LC(A)   &kp LC(S)        &kp PERCENT  &kp PERCENT  &kp JP_AMPERSAND   &trans       &trans  &kp LEFT          &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT        &kp JP_COLON
-&kp LC(Z)   &kp LC(X)        &kp LC(C)    &kp LC(V)    &kp LC(LEFT_ARROW)  &kp EQUAL    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
+&kp LC(Z)   &kp LC(X)        &kp LC(C)    &kp LC(V)    &kp LC(LEFT)  &kp EQUAL    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
 &trans      &trans           &trans       &trans       &trans              &sl 4        &trans  &trans                                               &trans           &kp PIPE
             >;
         };
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
+&kp LA(F4)      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
 &kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                  &trans  &trans
