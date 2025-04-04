@@ -5,6 +5,27 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
+#define JP_DQUOTE       AT                // "
+#define JP_AMPERSAND    CARET             // &
+#define JP_QUOTE        AMPERSAND         // '
+#define JP_EQUAL        UNDER             // =
+#define JP_CARET        EQUAL             // ^
+#define JP_YEN          0x89              // ¥
+#define JP_PLUS         COLON             // +
+#define JP_TILDE        PLUS              // ~
+#define JP_PIPE         LS(0x89)          // |
+#define JP_AT           LEFT_BRACKET      // @
+#define JP_COLON        SINGLE_QUOTE      // :
+#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE    LEFT_BRACE        // `
+#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_LBRACKET     RIGHT_BRACKET     // [
+#define JP_RBRACKET     BACKSLASH         // ]
+#define JP_LPAREN       ASTERISK          // (
+#define JP_RPAREN       LEFT_PARENTHESIS  // )
+#define JP_LBRACE       RIGHT_BRACE       // {
+#define JP_RBRACE       PIPE              // }
+
 
 &mt {
     flavor = "balanced";
@@ -56,17 +77,17 @@
 
         layer_1 {
             bindings = <
-&kp RS(EQUAL)  &kp DOUBLE_QUOTES  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9                                    &kp LEFT_PARENTHESIS     &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE      &kp MINUS
-&kp AT_SIGN    &kp EXCLAMATION    &kp KP_N4        &kp KP_N5        &kp KP_N6        &trans    &trans            &kp LG(LEFT_ARROW)       &kp PAGE_DOWN          &kp PAGE_UP     &kp LG(RIGHT_ARROW)  &kp SEMICOLON
-&kp PLUS       &kp KP_N0          &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &trans    &kp SINGLE_QUOTE  &kp SINGLE_QUOTE         &kp QUESTION           &kp SLASH       &kp BACKSLASH        &kp ASTERISK
+&kp JP_EQUAL  &kp JP_DQUOTE  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_N9                                    &kp JP_LPAREN     &kp JP_RPAREN  &kp JP_LBRACE  &kp JP_RBRACE      &kp MINUS
+&kp JP_AT    &kp EXCLAMATION    &kp KP_N4        &kp KP_N5        &kp KP_N6        &trans    &trans            &kp LG(LEFT_ARROW)       &kp PAGE_DOWN          &kp PAGE_UP     &kp LG(RIGHT_ARROW)  &kp SEMICOLON
+&kp PLUS       &kp KP_N0          &kp KP_N1        &kp KP_N2        &kp KP_NUMBER_3  &trans    &kp JP_QUOTE  &kp JP_QUOTE         &kp QUESTION           &kp SLASH       &kp BACKSLASH        &kp JP_ASTERISK
 &kp BACKSLASH  &kp CARET          &kp HASH         &kp SLASH        &trans           &trans    &kp LG(UP_ARROW)  &kp LG(LS(RIGHT_ARROW))                                         &trans               &kp DOLLAR
             >;
         };
 
         layer_2 {
             bindings = <
-&kp ESCAPE  &kp KP_NUMBER_7  &kp ENTER    &kp F5       &kp PLUS                                 &kp F2            &kp F10            &kp BACKSPACE   &kp DELETE       &kp UNDERSCORE
-&kp LC(A)   &kp LC(S)        &kp PERCENT  &kp PERCENT  &kp RS(AMPERSAND)   &trans       &trans  &kp LEFT          &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT        &kp COLON
+&kp ESCAPE  &kp KP_NUMBER_7  &kp ENTER    &kp F5       &kp PLUS                                 &kp F2            &kp F10            &kp BACKSPACE   &kp DELETE       &kp JP_UNDERSCORE
+&kp LC(A)   &kp LC(S)        &kp PERCENT  &kp PERCENT  &kp JP_AMPERSAND   &trans       &trans  &kp LEFT          &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT        &kp JP_COLON
 &kp LC(Z)   &kp LC(X)        &kp LC(C)    &kp LC(V)    &kp LC(LEFT_ARROW)  &kp EQUAL    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH
 &trans      &trans           &trans       &trans       &trans              &sl 4        &trans  &trans                                               &trans           &kp PIPE
             >;
